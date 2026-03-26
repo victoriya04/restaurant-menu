@@ -126,16 +126,16 @@ body.accessible header {
 }
 
 body.accessible .subtitle {
-    color: white; /* подзаглавията стават бели */
+    color: white; 
 }
 
 body.accessible .info p {
-    color: white;      /* описанията стават бели */
+    color: white;    
     line-height: 1.7;
 }
 
 body.accessible .info .price {
-    color: white;      /* цените също бели */
+    color: white;      
 }
 
 
@@ -144,7 +144,6 @@ body.accessible .card {
     border: 2px solid white;
 }
 
-/* снимките остават видими */
 body.accessible img {
     display: block;
 }
