@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <title>Меню - Ресторант "При Баба"</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🍲 Ресторант "При Баба"</h1>
+    <p class="subtitle">Традиционна кухня с грижа за всички</p>
+
+    <button id="toggleAccessibility">
+        👁️ Достъпен режим: ИЗКЛ
+    </button>
+</header>
+
+<main class="container">
+
+    <!-- СУПИ -->
+    <section>
+        <h2>Супи</h2>
+        <div class="grid">
+
+            <div class="card">
+                <img src="images/supa-topcheta-1024x683.jpg" alt="Супа топчета">
+                <div class="info">
+                    <h3>Супа топчета</h3>
+                    <p>Топла супа с кайма и зеленчуци</p>
+                    <p class="price">4.00 €</p>
+                    <button data-text="Супа топчета. Топла супа с кайма и зеленчуци.">🔊 Чуй описанието</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/shkembe-chorba.jpg" alt="Шкембе чорба">
+                <div class="info">
+                    <h3>Шкембе чорба</h3>
+                    <p>Традиционна супа с чесън и оцет</p>
+                    <p class="price">4.50 €</p>
+                    <button data-text="Шкембе чорба. Традиционна супа с чесън и оцет.">🔊 Чуй описанието</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ОСНОВНИ -->
+    <section>
+        <h2>Основни</h2>
+        <div class="grid">
+
+            <div class="card">
+                <img src="images/svinsko-zele.webp" alt="Свинско със зеле">
+                <div class="info">
+                    <h3>Свинско със зеле</h3>
+                    <p>Бавно готвено традиционно ястие</p>
+                    <p class="price">5.50 €</p>
+                    <button data-text="Свинско със зеле. Бавно готвено традиционно ястие.">🔊 Чуй описанието</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/pile-oriz.jpg" alt="Пиле с ориз">
+                <div class="info">
+                    <h3>Пиле с ориз</h3>
+                    <p>Печено пиле с гарнитура от ориз</p>
+                    <p class="price">5.00 €</p>
+                    <button data-text="Пиле с ориз. Печено пиле с гарнитура от ориз.">🔊 Чуй описанието</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ДЕСЕРТИ -->
+    <section>
+        <h2>Десерти</h2>
+        <div class="grid">
+
+            <div class="card">
+                <img src="images/mlqko-oriz.jpg" alt="Мляко с ориз">
+                <div class="info">
+                    <h3>Мляко с ориз</h3>
+                    <p>Домашен десерт с канела</p>
+                    <p class="price">2.50 €</p>
+                    <button data-text="Мляко с ориз. Домашен десерт с канела.">🔊 Чуй описанието</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/tikvenik.webp" alt="Тиквеник">
+                <div class="info">
+                    <h3>Тиквеник</h3>
+                    <p>Ароматен десерт с тиква и орехи</p>
+                    <p class="price">3.00 €</p>
+                    <button data-text="Тиквеник. Десерт с тиква и орехи.">🔊 Чуй описанието</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- НАПИТКИ -->
+    <section>
+        <h2>Напитки</h2>
+        <div class="grid">
+
+            <div class="card">
+                <img src="images/voda.webp" alt="Вода">
+                <div class="info">
+                    <h3>Вода</h3>
+                    <p>Минерална вода</p>
+                    <p class="price">2.00 €</p>
+                    <button data-text="Вода. Минерална вода.">🔊 Чуй описанието</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/airan.jpeg" alt="Айрян">
+                <div class="info">
+                    <h3>Айрян</h3>
+                    <p>Разхладен, домашен</p>
+                    <p class="price">1.50 €</p>
+                    <button data-text="Айрян. Разхладен домашен.">🔊 Чуй описанието</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/kompot.jpg" alt="Домашен компот">
+                <div class="info">
+                    <h3>Домашен компот</h3>
+                    <p>По традиционна рецепта</p>
+                    <p class="price">1.00 €</p>
+                    <button data-text="Домашен компот. Напитка по традиционна рецепта.">🔊 Чуй описанието</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- QR Код -->
+    <section class="qr-section">
+        <h2>Сканирай и вземи менюто на телефона</h2>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://example.com/menu" alt="QR код меню">
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

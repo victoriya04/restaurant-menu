@@ -1,0 +1,179 @@
+/* --- БАЗОВИ --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: #fdf6f0;
+    color: #2c2c2c;
+}
+
+/* --- HEADER --- */
+header {
+    background: linear-gradient(135deg, #8b2b2b, #c45b5b);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.subtitle {
+    margin: 5px 0 15px;
+    font-size: 14px;
+    opacity: 0.9;
+    color:antiquewhite;
+}
+
+h1 {
+    margin: 0;
+}
+
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #2c2c2c;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+/* --- MAIN --- */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px;
+}
+
+h2 {
+    margin-top: 40px;
+    border-left: 5px solid #c45b5b;
+    padding-left: 10px;
+}
+
+/* --- GRID MENU --- */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* --- CARD --- */
+.card {
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    overflow: hidden;
+    transition: transform 0.25s, box-shadow 0.25s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+/* --- IMAGE --- */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* --- TEXT --- */
+.info {
+    padding: 15px;
+    flex: 1;
+}
+
+h3 {
+    margin: 0 0 6px;
+    font-weight: 600;
+}
+
+p {
+    margin: 6px 0;
+    color: #555;
+}
+
+.price {
+    font-weight: 600;
+    color: #b23a3a;
+}
+
+/* --- AUDIO BUTTON --- */
+.info button {
+    background: #0077cc;
+    color: white;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-top: 8px;
+}
+
+/* --- ACCESSIBILITY MODE --- */
+body.accessible {
+    background: #111;
+    color: white;
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+
+body.accessible header {
+    background: black;
+    color: yellow;
+}
+
+body.accessible .subtitle {
+    color: white; /* подзаглавията стават бели */
+}
+
+body.accessible .info p {
+    color: white;      /* описанията стават бели */
+    line-height: 1.7;
+}
+
+body.accessible .info .price {
+    color: white;      /* цените също бели */
+}
+
+
+body.accessible .card {
+    background: #222;
+    border: 2px solid white;
+}
+
+/* снимките остават видими */
+body.accessible img {
+    display: block;
+}
+
+body.accessible button {
+    font-size: 1.1em;
+    padding: 15px;
+}
+
+body.accessible p {
+    line-height: 1.7;
+}
+
+/* --- QR секция --- */
+.qr-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.qr-section img {
+    margin-top: 15px;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+/* --- ACCESSIBILITY MODE QR --- */
+body.accessible .qr-section img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
